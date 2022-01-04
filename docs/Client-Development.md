@@ -10,6 +10,15 @@ $ npx create-react-app  .
 $ yarn start
 ```
 
+<br/>
+
+```
+$ yarn add bootstrap
+```
+
+<br/>
+
+![Application](/img/pic-m01-p01.png?raw=true)
 
 <br/>
 
