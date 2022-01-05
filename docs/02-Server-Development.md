@@ -50,6 +50,29 @@ http://localhost:4000/status
 
 <br/>
 
+### 003 Installing a router and creating better handlers
+
+HttpRouter  
+https://github.com/julienschmidt/httprouter
+
+<br/>
+
+```
+$ go get -u github.com/julienschmidt/httprouter
+```
+
+<br/>
+
+```
+$ go run cmd/api/*.go
+```
+
+<br/>
+
+http://localhost:4000/status
+
+<br/>
+
 ---
 
 <br/>
