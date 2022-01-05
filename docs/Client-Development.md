@@ -18,7 +18,23 @@ $ yarn add bootstrap
 
 <br/>
 
-![Application](/img/pic-m01-p01.png?raw=true)
+![Application](/img/pic-m03-p01.png?raw=true)
+
+<br/>
+
+## 04 Building the Front End
+
+<br/>
+
+### 002 Creating our front end application and introducting the React Router
+
+```
+$ yarn add react-router-dom
+```
+
+<br/>
+
+![Application](/img/pic-m04-p01.png?raw=true)
 
 <br/>
 
