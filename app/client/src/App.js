@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Admin from './components/Admin';
+import Home from './components/Home';
+import Movies from './components/Movies';
 
 export default function App() {
   return (
@@ -37,15 +40,3 @@ export default function App() {
     </Router>
   );
 }
-
-const Home = () => {
-  return <h2>Home</h2>;
-};
-
-const Movies = () => {
-  return <h2>Movies</h2>;
-};
-
-const Admin = () => {
-  return <h2>Manage Catalogue</h2>;
-};

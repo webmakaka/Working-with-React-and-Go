@@ -38,6 +38,18 @@ $ yarn add react-router-dom
 
 <br/>
 
+### 003 Routing to a component
+
+<br/>
+
+### 004 Challenge: Route to components
+
+<br/>
+
+### 005 Solution to Challenge
+
+<br/>
+
 ---
 
 <br/>

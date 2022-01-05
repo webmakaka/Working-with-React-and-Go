@@ -1,10 +1,9 @@
-# [Udemy] Working with React and Go (Golang) [ENG, 2021]
+# [Udemy, Trevor Sawler] Working with React and Go (Golang) [ENG, 2021]
 
 <br/>
 
 **Original src:**  
 https://github.com/tsawler/go-react/
-
 
 <br/>
 
