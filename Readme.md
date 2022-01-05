@@ -2,7 +2,9 @@
 
 <br/>
 
-### [Client Development](./docs/Client-Development.md)
+### [React Client Development](./docs/01-Client-Development.md)
+
+### [Golang Server Development](./docs/02-Server-Development.md)
 
 <br/>
 
