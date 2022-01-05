@@ -66,6 +66,14 @@ $ yarn add react-router-dom
 
 <br/>
 
+### 009 Displaying one movie
+
+<br/>
+
+![Application](/img/pic-m04-p03.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

@@ -1,15 +1,10 @@
-import {
-  BrowserRouter as Router,
-  Link,
-  Route,
-  Routes,
-  useParams,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Admin from './components/Admin';
 import Categories from './components/Categories';
 import Home from './components/Home';
 import Movies from './components/Movies';
+import OneMovie from './components/OneMovie';
 
 export default function App() {
   return (
@@ -40,7 +35,7 @@ export default function App() {
           </div>
           <div className="col-md-10">
             <Routes>
-              <Route path="/movies/:id" element={<Movie />}></Route>
+              <Route path="/movies/:id" element={<OneMovie />} />
               <Route path="/movies" element={<Movies />}></Route>
               <Route
                 exact
@@ -67,10 +62,10 @@ export default function App() {
   );
 }
 
-function Movie() {
-  let { id } = useParams();
-  return <h2>Movie id {id}</h2>;
-}
+// function Movie() {
+//   let { id } = useParams();
+//   return <h2>Movie id {id}</h2>;
+// }
 
 function CategoryPage() {
   return (
