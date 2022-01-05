@@ -2,11 +2,6 @@
 
 <br/>
 
-**Original src:**  
-https://github.com/tsawler/go-react/
-
-<br/>
-
 ### [Client Development](./docs/Client-Development.md)
 
 <br/>

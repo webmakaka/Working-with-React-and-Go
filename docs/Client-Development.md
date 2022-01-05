@@ -50,6 +50,22 @@ $ yarn add react-router-dom
 
 <br/>
 
+### 006 More about routing (and a bit about the React lifecycle)
+
+<br/>
+
+### 007 More about routing Part II
+
+<br/>
+
+### 008 More about routing Part III
+
+<br/>
+
+![Application](/img/pic-m04-p02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
