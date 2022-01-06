@@ -85,6 +85,13 @@ http://localhost:4000/v1/movie/12
 
 <br/>
 
+### 006 Improved error handling
+
+// invalid syntax on request
+http://localhost:4000/v1/movie/a
+
+<br/>
+
 ---
 
 <br/>
