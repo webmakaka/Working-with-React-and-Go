@@ -131,7 +131,7 @@ $ PGPASSWORD=pA55w0rd123 psql --host=localhost --username=user1 --port=5432 --db
 $ curl http://localhost:4000/v1/movie/1 | jq
 ```
 
-<br/>
+**response**
 
 ```
 {
@@ -146,6 +146,44 @@ $ curl http://localhost:4000/v1/movie/1 | jq
     "mpaa_rating": "R",
     "created_at": "2021-05-17T00:00:00Z",
     "updated_at": "2021-05-17T00:00:00Z"
+  }
+}
+```
+
+<br/>
+
+### 010 Solution to challenge
+
+```
+$ PGPASSWORD=pA55w0rd123 psql --host=localhost --username=user1 --port=5432 --dbname=go_movies -c "INSERT INTO movies_genres (movie_id, genre_id, created_at, updated_at) VALUES (1, 1, '2021-05-19', '2021-05-19');"
+```
+
+<br/>
+
+```
+$ curl http://localhost:4000/v1/movie/1 | jq
+```
+
+**response**
+
+```
+{
+  "movie": {
+    "id": 1,
+    "title": "The Shawshank Redemption",
+    "description": "Two imprisoned men bond over a number of years",
+    "year": 1994,
+    "release_date": "1994-10-14T00:00:00Z",
+    "runtime": 142,
+    "rating": 5,
+    "mpaa_rating": "R",
+    "genres": [
+      {
+        "genre": {
+          "genre_name": "Drama"
+        }
+      }
+    ]
   }
 }
 ```
