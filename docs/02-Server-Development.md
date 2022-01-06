@@ -10,7 +10,7 @@
 
 1. Install vscode extension for go.
 2. Restart vscode
-3.
+3. vscode
 
 ```
 ^P
@@ -70,6 +70,18 @@ $ go run cmd/api/*.go
 <br/>
 
 http://localhost:4000/status
+
+<br/>
+
+### 004 Models
+
+<br/>
+
+### 005 Setting up a simple API route
+
+<br/>
+
+http://localhost:4000/v1/movie/12
 
 <br/>
 
