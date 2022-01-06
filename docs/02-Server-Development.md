@@ -289,6 +289,14 @@ $ curl http://localhost:4000/v1/movies | jq
 
 <br/>
 
+## 06 Connecting to our REST API
+
+<br/>
+
+### 001 Setting up CORS middleware
+
+<br/>
+
 ---
 
 <br/>

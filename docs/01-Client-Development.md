@@ -74,6 +74,14 @@ $ yarn add react-router-dom
 
 <br/>
 
+## 06 Connecting to our REST API
+
+<br/>
+
+### 002 Getting the list of movies
+
+<br/>
+
 ---
 
 <br/>
