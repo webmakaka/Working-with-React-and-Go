@@ -92,6 +92,23 @@ http://localhost:4000/v1/movie/a
 
 <br/>
 
+### 007 Creating the database
+
+```
+$ docker-compose up
+```
+
+<br/>
+
+```
+$ cd data/
+
+// pass pA55w0rd123
+$ psql -U user1 -h localhost -p 5432 -d go_movies < go_movies.sql
+```
+
+<br/>
+
 ---
 
 <br/>
