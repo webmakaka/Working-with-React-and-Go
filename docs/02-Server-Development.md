@@ -109,6 +109,16 @@ $ psql -U user1 -h localhost -p 5432 -d go_movies < go_movies.sql
 
 <br/>
 
+### 008 Creating our connection pool and connecting to the database
+
+<br/>
+
+```
+$ go get -u github.com/lib/pq@v1.10.0
+```
+
+<br/>
+
 ---
 
 <br/>
