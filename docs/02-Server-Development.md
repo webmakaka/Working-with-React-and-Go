@@ -220,6 +220,75 @@ $ curl http://localhost:4000/v1/movie/1 | jq
 
 <br/>
 
+### 012 Getting all movies as JSON
+
+<br/>
+
+```
+$ curl http://localhost:4000/v1/movies | jq
+```
+
+**response**
+
+```
+{
+  "movies": [
+    {
+      "id": 4,
+      "title": "American Psycho",
+      "description": " A wealthy New York investment banking executive hides his alternate psychopathic ego",
+      "year": 2000,
+      "release_date": "2000-04-14T00:00:00Z",
+      "runtime": 102,
+      "rating": 4,
+      "mpaa_rating": "R",
+      "genres": {}
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "description": "The menace known as the Joker wreaks havoc on Gotham City",
+      "year": 2008,
+      "release_date": "2008-07-18T00:00:00Z",
+      "runtime": 152,
+      "rating": 5,
+      "mpaa_rating": "PG13",
+      "genres": {}
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "description": "The aging patriarch of an organized crime dynasty transfers control to his son",
+      "year": 1972,
+      "release_date": "1972-03-24T00:00:00Z",
+      "runtime": 175,
+      "rating": 5,
+      "mpaa_rating": "R",
+      "genres": {}
+    },
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "description": "Two imprisoned men bond over a number of years",
+      "year": 1994,
+      "release_date": "1994-10-14T00:00:00Z",
+      "runtime": 142,
+      "rating": 5,
+      "mpaa_rating": "R",
+      "genres": {
+        "1": "Drama"
+      }
+    }
+  ]
+}
+```
+
+<br/>
+
+### 013 Next Steps
+
+<br/>
+
 ---
 
 <br/>
