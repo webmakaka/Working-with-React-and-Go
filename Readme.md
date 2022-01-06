@@ -2,6 +2,12 @@
 
 <br/>
 
+```
+$ sudo apt install -y jq
+```
+
+<br/>
+
 ### [React Client Development](./docs/01-Client-Development.md)
 
 ### [Golang Server Development](./docs/02-Server-Development.md)

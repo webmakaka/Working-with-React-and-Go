@@ -119,6 +119,39 @@ $ go get -u github.com/lib/pq@v1.10.0
 
 <br/>
 
+### 009 Database functions & a challenge
+
+```
+$ PGPASSWORD=pA55w0rd123 psql --host=localhost --username=user1 --port=5432 --dbname=go_movies -c 'select id, title, description, year, release_date, rating, runtime, mpaa_rating, created_at, updated_at from movies where id = 1'
+```
+
+<br/>
+
+```
+$ curl http://localhost:4000/v1/movie/1 | jq
+```
+
+<br/>
+
+```
+{
+  "movie": {
+    "id": 1,
+    "title": "The Shawshank Redemption",
+    "description": "Two imprisoned men bond over a number of years",
+    "year": 1994,
+    "release_date": "1994-10-14T00:00:00Z",
+    "runtime": 142,
+    "rating": 5,
+    "mpaa_rating": "R",
+    "created_at": "2021-05-17T00:00:00Z",
+    "updated_at": "2021-05-17T00:00:00Z"
+  }
+}
+```
+
+<br/>
+
 ---
 
 <br/>
