@@ -82,6 +82,10 @@ $ yarn add react-router-dom
 
 <br/>
 
+### 003 Checking for errors
+
+<br/>
+
 ---
 
 <br/>
