@@ -61,7 +61,7 @@ class OneGenre extends Component {
               <Link
                 to={`/movies/${m.id}`}
                 className="list-group-item list-group-item-action"
-                id={m.id}
+                id={m.index}
               >
                 {m.title}
               </Link>
