@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
-import { useParams } from 'react-router';
+import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 
 function withParams(Component) {
-  return (props) => <Component {...props} params={useParams()} />;
+  return (props) => <Component {...props} params={useLocation()} />;
 }
 
 class OneGenre extends Component {
@@ -11,10 +11,11 @@ class OneGenre extends Component {
     movies: [],
     isLoaded: false,
     error: null,
+    genreName: '',
   };
 
   componentDidMount() {
-    fetch('http://localhost:4000/v1/movies/' + this.props.params.id)
+    fetch('http://localhost:4000/v1/movies/' + this.props.params.state.genreId)
       .then((response) => {
         if (response.status !== '200') {
           let err = Error;
@@ -28,6 +29,7 @@ class OneGenre extends Component {
           {
             movies: json.movies,
             isLoaded: true,
+            genreName: this.props.params.state.genreName,
           },
           (error) => {
             this.setState({
@@ -40,7 +42,7 @@ class OneGenre extends Component {
   }
 
   render() {
-    let { movies, isLoaded, error } = this.state;
+    let { movies, isLoaded, error, genreName } = this.state;
 
     if (!movies) {
       movies = [];
@@ -53,8 +55,7 @@ class OneGenre extends Component {
     } else {
       return (
         <Fragment>
-          <h2>Genre:</h2>
-
+          <h2>Genre: {genreName}</h2>
           <div className="list-group">
             {movies.map((m) => (
               <Link

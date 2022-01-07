@@ -108,6 +108,10 @@ Only ganre 'drama' will work
 
 <br/>
 
+### 010 Showing Genre name - an alternative to lifting state
+
+<br/>
+
 ---
 
 <br/>
