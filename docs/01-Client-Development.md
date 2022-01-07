@@ -90,6 +90,18 @@ $ yarn add react-router-dom
 
 <br/>
 
+### 005 Getting started with Movies by Genre
+
+<br/>
+
+### 007 Displaying the list of Genres
+
+<br/>
+
+![Application](/img/pic-m06-p01.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

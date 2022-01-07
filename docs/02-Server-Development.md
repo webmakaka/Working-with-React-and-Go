@@ -297,6 +297,52 @@ $ curl http://localhost:4000/v1/movies | jq
 
 <br/>
 
+### 006 Getting Genres from back end
+
+<br/>
+
+```
+$ curl http://localhost:4000/v1/genres | jq
+```
+
+**response**
+
+```
+{
+  "genres": [
+    {
+      "genre_name": "Action"
+    },
+    {
+      "genre_name": "Adventure"
+    },
+    {
+      "genre_name": "Comedy"
+    },
+    {
+      "genre_name": "Comic Book"
+    },
+    {
+      "genre_name": "Crime"
+    },
+    {
+      "genre_name": "Drama"
+    },
+    {
+      "genre_name": "Mystery"
+    },
+    {
+      "genre_name": "Romance"
+    },
+    {
+      "genre_name": "Sci-Fi"
+    }
+  ]
+}
+```
+
+<br/>
+
 ---
 
 <br/>
