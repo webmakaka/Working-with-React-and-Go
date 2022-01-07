@@ -343,6 +343,39 @@ $ curl http://localhost:4000/v1/genres | jq
 
 <br/>
 
+### 008 Getting movies by Genre
+
+<br/>
+
+```
+$ curl http://localhost:4000/v1/movies/1 | jq
+```
+
+**response**
+
+```
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "description": "Two imprisoned men bond over a number of years",
+      "year": 1994,
+      "release_date": "1994-10-14T00:00:00Z",
+      "runtime": 142,
+      "rating": 5,
+      "mpaa_rating": "R",
+      "genres": {
+        "1": "Drama"
+      }
+    }
+  ]
+}
+
+```
+
+<br/>
+
 ---
 
 <br/>
