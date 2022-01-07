@@ -102,6 +102,12 @@ $ yarn add react-router-dom
 
 <br/>
 
+### 009 Displaying movies by Genre
+
+Only ganre 'drama' will work
+
+<br/>
+
 ---
 
 <br/>
