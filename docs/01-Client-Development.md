@@ -86,6 +86,10 @@ $ yarn add react-router-dom
 
 <br/>
 
+### 004 Displaying one movie
+
+<br/>
+
 ---
 
 <br/>
