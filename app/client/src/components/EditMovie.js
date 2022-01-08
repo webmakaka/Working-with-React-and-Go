@@ -93,8 +93,22 @@ class EditMovie extends Component {
   }
 
   handleSubmit = (event) => {
-    console.log('Form was submitted');
     event.preventDefault();
+    console.log('Form was submitted');
+
+    const data = new FormData(event.target);
+    const payload = Object.fromEntries(data.entries());
+
+    const requestOptions = {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    };
+
+    fetch('http://localhost:4000/v1/admin/editmovie', requestOptions)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      });
   };
 
   handleChange = (event) => {
