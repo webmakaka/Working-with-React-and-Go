@@ -124,6 +124,22 @@ Only ganre 'drama' will work
 
 <br/>
 
+### 002 Making our form a controlled component, and binding it to state
+
+<br/>
+
+### 003 Making form inputs reusable components and a Challenge
+
+<br/>
+
+### 004 Solution to Challenge
+
+<br/>
+
+### 005 Creating a reusable select component
+
+<br/>
+
 ---
 
 <br/>
