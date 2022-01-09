@@ -150,7 +150,13 @@ Only ganre 'drama' will work
 
 ### 008 Client side form validation
 
+<br/>
 
+### 010 Providing feedback with a reusable alert
+
+<br/>
+
+![Application](/img/pic-m07-p01.png?raw=true)
 
 <br/>
 
