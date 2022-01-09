@@ -384,6 +384,10 @@ $ curl http://localhost:4000/v1/movies/1 | jq
 
 <br/>
 
+### 011 Editing an existing movie
+
+<br/>
+
 ---
 
 <br/>
