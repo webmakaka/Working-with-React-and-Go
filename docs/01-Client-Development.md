@@ -188,6 +188,10 @@ Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'p
 
 <br/>
 
+## 08 Securing Routes in our REST API
+
+<br/>
+
 ---
 
 <br/>
