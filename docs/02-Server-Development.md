@@ -388,6 +388,33 @@ $ curl http://localhost:4000/v1/movies/1 | jq
 
 <br/>
 
+### 014 Implementing delete on the back end
+
+<br/>
+
+## 08 Securing Routes in our REST API
+
+<br/>
+
+### 001 Generating JSON Web Tokens on the back end
+
+<br/>
+
+```
+$ go get -u github.com/pascaldekloe/jwt
+$ go get -u golang.org/x/crypto/bcrypt
+```
+
+<br/>
+
+**Generate-a-password-hash**  
+https://play.golang.org/p/uKMMCzJWGsW
+
+**Generate-a-JWT-Secret**  
+https://play.golang.org/p/s8KlqJIOWej
+
+<br/>
+
 ---
 
 <br/>

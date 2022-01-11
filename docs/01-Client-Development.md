@@ -160,6 +160,34 @@ Only ganre 'drama' will work
 
 <br/>
 
+### 012 Deleting a movie
+
+<br/>
+
+### 013 Adding a confirmation step when deleting movies
+
+```
+$ yarn add react-confirm-alert
+```
+
+<br/>
+
+### 015 Connecting our delete button to the REST back end
+
+```
+Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'push')
+```
+
+<br/>
+
+### 016 Challenge: displaying list of movies to edit
+
+<br/>
+
+### 017 Solution to challenge
+
+<br/>
+
 ---
 
 <br/>
