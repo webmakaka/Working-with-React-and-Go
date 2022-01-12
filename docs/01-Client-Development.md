@@ -192,6 +192,25 @@ Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'p
 
 <br/>
 
+### 002 Changing App to a component, and setting up state
+
+<br/>
+
+### 003 Getting the JSON Web Token from the back end
+
+<br/>
+
+```
+me@example.com
+password
+```
+
+<br/>
+
+![Application](/img/pic-m08-p01.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
