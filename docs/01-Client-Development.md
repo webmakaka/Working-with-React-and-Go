@@ -211,6 +211,10 @@ password
 
 <br/>
 
+### 004 Handling a successful login
+
+<br/>
+
 ---
 
 <br/>
