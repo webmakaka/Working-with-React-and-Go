@@ -415,6 +415,16 @@ https://play.golang.org/p/s8KlqJIOWej
 
 <br/>
 
+### 005 Adding middleware to check for a valid token
+
+<br/>
+
+```
+$ go get -u github.com/justinas/alice
+```
+
+<br/>
+
 ---
 
 <br/>
