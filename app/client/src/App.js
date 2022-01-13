@@ -85,13 +85,6 @@ export default class App extends Component {
                   path="/login"
                   element={<Login handleJWTChange={this.handleJWTChange} />}
                 />
-                {/* <Route
-                  exact
-                  path="/login"
-                  element={(props) => (
-                    <Login {...props} handleJWTChange={this.handleJWTChange} />
-                  )}
-                /> */}
                 <Route path="/movies/:id" element={<OneMovie />} />
                 <Route path="/movies" element={<Movies />}></Route>
                 <Route path="/genre/:id" element={<OneGenre />} />
@@ -101,17 +94,10 @@ export default class App extends Component {
                   path="/admin/movie/:id"
                   element={<EditMovie jwt={this.state.jwt} />}
                 ></Route>
-                {/* <Route
-                exact
-                path="/by-category/drama"
-                element={<Categories title={`Drama`} />}
-              ></Route>
-              <Route
-                exact
-                path="/by-category/comedy"
-                element={<Categories title={`Comedy`} />}
-              ></Route> */}
-                <Route path="/admin" element={<Admin />}></Route>
+                <Route
+                  path="/admin"
+                  element={<Admin jwt={this.state.jwt} />}
+                ></Route>
                 <Route path="/" element={<Home />}></Route>
               </Routes>
             </div>
@@ -121,19 +107,3 @@ export default class App extends Component {
     );
   }
 }
-
-// function CategoryPage() {
-//   return (
-//     <div>
-//       <h2>Categories</h2>
-//       <ul>
-//         <li>
-//           <Link to={`/by-category/comedy`}>Comedy</Link>{' '}
-//         </li>
-//         <li>
-//           <Link to={`/by-category/drama`}>Drama</Link>{' '}
-//         </li>
-//       </ul>
-//     </div>
-//   );
-// }

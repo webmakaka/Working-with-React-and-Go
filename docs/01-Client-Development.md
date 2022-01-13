@@ -219,6 +219,18 @@ password
 
 <br/>
 
+### 007 Adding redirects for protected components
+
+<br/>
+
+### 008 Challenge
+
+<br/>
+
+### 009 Solution to Challenge
+
+<br/>
+
 ---
 
 <br/>
