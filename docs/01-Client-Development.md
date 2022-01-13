@@ -215,6 +215,10 @@ password
 
 <br/>
 
+### 006 Protecting the route on our front end
+
+<br/>
+
 ---
 
 <br/>

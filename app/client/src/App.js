@@ -99,7 +99,7 @@ export default class App extends Component {
                 <Route
                   exact
                   path="/admin/movie/:id"
-                  element={<EditMovie />}
+                  element={<EditMovie jwt={this.state.jwt} />}
                 ></Route>
                 {/* <Route
                 exact

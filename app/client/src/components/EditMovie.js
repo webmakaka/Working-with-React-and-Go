@@ -118,10 +118,14 @@ class EditMovie extends Component {
 
     const data = new FormData(event.target);
     const payload = Object.fromEntries(data.entries());
+    const myHeaders = new Headers();
+    myHeaders.append('Content-Type', 'application/json');
+    myHeaders.append('Authorization', 'Bearer ' + this.props.jwt);
 
     const requestOptions = {
       method: 'POST',
       body: JSON.stringify(payload),
+      headers: myHeaders,
     };
 
     fetch('http://localhost:4000/v1/admin/editmovie', requestOptions)

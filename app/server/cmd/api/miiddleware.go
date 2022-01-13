@@ -26,7 +26,7 @@ func (app *application) checkToken(next http.Handler) http.Handler {
 		authHeader := r.Header.Get("Authorization")
 
 		if authHeader == "" {
-
+				// could set an anonymous user
 		}
 
 		headerParts := strings.Split(authHeader, " ")
