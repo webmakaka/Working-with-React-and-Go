@@ -231,6 +231,14 @@ password
 
 <br/>
 
+### 010 Saving our token when the user leaves the site
+
+<br/>
+
+### 011 Making better error responses from our back end
+
+<br/>
+
 ---
 
 <br/>
