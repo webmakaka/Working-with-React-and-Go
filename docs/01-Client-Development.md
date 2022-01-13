@@ -235,7 +235,7 @@ password
 
 <br/>
 
-### 011 Making better error responses from our back end
+### 012 Adding images
 
 <br/>
 

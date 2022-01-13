@@ -425,6 +425,10 @@ $ go get -u github.com/justinas/alice
 
 <br/>
 
+### 011 Making better error responses from our back end
+
+<br/>
+
 ---
 
 <br/>
