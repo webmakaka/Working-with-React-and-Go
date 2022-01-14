@@ -429,6 +429,28 @@ $ go get -u github.com/justinas/alice
 
 <br/>
 
+## 09 Adding GraphQL into the equation
+
+<br/>
+
+### 001 What is GraphQL?
+
+<br/>
+
+### 002 Setting up a schema and REST endpoint for GraphQL
+
+<br/>
+
+```
+$ go get -u github.com/graphql-go/graphql
+```
+
+<br/>
+
+### 003 Handling the GraphQL request
+
+<br/>
+
 ---
 
 <br/>
