@@ -451,6 +451,10 @@ $ go get -u github.com/graphql-go/graphql
 
 <br/>
 
+### 005 Adding a search endpoint
+
+<br/>
+
 ---
 
 <br/>

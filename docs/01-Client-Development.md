@@ -251,6 +251,14 @@ password
 
 <br/>
 
+### 006 Implementing GraphQL requests for search on front end
+
+<br/>
+
+![Application](/img/pic-m09-p02.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
