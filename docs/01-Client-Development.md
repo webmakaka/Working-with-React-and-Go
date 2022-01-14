@@ -239,6 +239,18 @@ password
 
 <br/>
 
+## 09 Adding GraphQL into the equation
+
+<br/>
+
+### 004 Implementing GraphQL requests for all movies
+
+<br/>
+
+![Application](/img/pic-m09-p01.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
