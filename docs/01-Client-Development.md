@@ -275,6 +275,14 @@ https://www.themoviedb.org/
 
 <br/>
 
+### 010 Updating the front end to display the poster image
+
+<br/>
+
+![Application](/img/pic-m09-p04.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>
