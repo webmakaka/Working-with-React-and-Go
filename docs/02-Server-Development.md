@@ -461,11 +461,15 @@ $ go get -u github.com/graphql-go/graphql
 $ PGPASSWORD=pA55w0rd123 psql --host=localhost --username=user1 --port=5432 --dbname=go_movies -c 'ALTER TABLE movies ADD COLUMN poster character varying'
 ```
 
+<br/>
+
 ```
 $ PGPASSWORD=pA55w0rd123 psql --host=localhost --username=user1 --port=5432 --dbname=go_movies -c 'select * from movies where false'
 ```
 
-poster column has appeared
+<br/>
+
+**poster column has appeared**
 
 <br/>
 

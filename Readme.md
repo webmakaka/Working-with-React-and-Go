@@ -7,11 +7,58 @@ https://learn-code.ca/
 
 <br/>
 
+## How to Run
+
 ```
 $ sudo apt install -y jq
 ```
 
 <br/>
+
+### DataBase
+
+```
+$ docker-compose up
+```
+
+<br/>
+
+```
+$ cd data/
+
+// pass pA55w0rd123
+$ psql -U user1 -h localhost -p 5432 -d go_movies < go_movies.sql
+```
+
+<br/>
+
+```
+$ PGPASSWORD=pA55w0rd123 psql --host=localhost --username=user1 --port=5432 --dbname=go_movies -c 'ALTER TABLE movies ADD COLUMN poster character varying'
+```
+
+<br/>
+
+### Server
+
+```
+$ cd app server
+$ go run cmd/api/*.go
+```
+
+<br/>
+
+### Client
+
+```
+$ cd app client
+$ yarn install
+$ export REACT_APP_API_URL='http://localhost:4000'
+$ yarn start
+```
+
+<br/>
+
+## Development
 
 ### [React Client Development](./docs/01-Client-Development.md)
 

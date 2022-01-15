@@ -310,6 +310,22 @@ $ yarn build
 
 <br/>
 
+## 11 Where to go from here
+
+<br/>
+
+### 001 React Hooks useState()
+
+<br/>
+
+### 002 React Hooks useEffect()
+
+<br/>
+
+### 003 More about useEffect, and why we don't typically refer to things by ID in React
+
+<br/>
+
 ---
 
 <br/>

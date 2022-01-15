@@ -1,4 +1,4 @@
-import { Component, Fragment } from 'react';
+import { Component, Fragment, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Admin from './components/Admin';
@@ -89,6 +89,9 @@ export default class App extends Component {
                   <li className="list-group-item">
                     <Link to="graphql">GraphQL</Link>
                   </li>
+                  <li className="list-group-item">
+                    <Link to="extras">Exras</Link>
+                  </li>
                 </ul>
                 <pre>{JSON.stringify(this.state, null, 3)}</pre>
               </nav>
@@ -118,6 +121,7 @@ export default class App extends Component {
                   path="/admin"
                   element={<Admin jwt={this.state.jwt} />}
                 ></Route>
+                <Route path="/extras" element={<Extras />}></Route>
                 <Route path="/" element={<Home />}></Route>
               </Routes>
             </div>
@@ -126,4 +130,34 @@ export default class App extends Component {
       </Router>
     );
   }
+}
+
+function Extras() {
+  const [activeUsers, setActiveUserCount] = useState(0);
+
+  // const counterRef = document.getElementById('counter');
+
+  useEffect(() => {
+    // counterRef.innerText = activeUsers;
+    
+  });
+
+  return (
+    <Fragment>
+      <button
+        className="btn btn-success"
+        onClick={() => setActiveUserCount(activeUsers + 1)}
+      >
+        Add 1 user to count
+      </button>
+      <button
+        className="btn btn-danger ms-2"
+        onClick={() => setActiveUserCount(activeUsers - 1)}
+      >
+        Subtract 1 user from count
+      </button>
+
+      <div>{activeUsers} user online</div>
+    </Fragment>
+  );
 }
