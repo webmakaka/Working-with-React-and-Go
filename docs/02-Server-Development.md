@@ -455,6 +455,28 @@ $ go get -u github.com/graphql-go/graphql
 
 <br/>
 
+### 009 Modifying the back end to handle poster images
+
+```
+$ PGPASSWORD=pA55w0rd123 psql --host=localhost --username=user1 --port=5432 --dbname=go_movies -c 'ALTER TABLE movies ADD COLUMN poster character varying'
+```
+
+```
+$ PGPASSWORD=pA55w0rd123 psql --host=localhost --username=user1 --port=5432 --dbname=go_movies -c 'select * from movies where false'
+```
+
+poster column has appeared
+
+<br/>
+
+JSON-from-themoviedb.org  
+https://api.themoviedb.org/3/search/movie?api_key=b41447e6319d1cd467306735632ba733&query=The%20Shawshank%20Redemption
+
+JSON-to-Go-converter  
+https://mholt.github.io/json-to-go/
+
+<br/>
+
 ---
 
 <br/>
