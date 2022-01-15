@@ -259,6 +259,22 @@ password
 
 <br/>
 
+### 007 Displaying one movie using GraphQL
+
+<br/>
+
+https://www.themoviedb.org/
+
+<br/>
+
+### 008 Updating the front end
+
+<br/>
+
+![Application](/img/pic-m09-p03.png?raw=true)
+
+<br/>
+
 ---
 
 <br/>

@@ -10,6 +10,7 @@ import Login from './components/Login';
 import Movies from './components/Movies';
 import OneGenre from './components/OneGenre';
 import OneMovie from './components/OneMovie';
+import OneMovieGraphQL from './components/OneMovieGraphQL';
 
 export default class App extends Component {
   constructor(props) {
@@ -100,6 +101,10 @@ export default class App extends Component {
                   element={<Login handleJWTChange={this.handleJWTChange} />}
                 />
                 <Route path="/movies/:id" element={<OneMovie />} />
+                <Route
+                  path="/moviesgraphql/:id"
+                  element={<OneMovieGraphQL />}
+                />
                 <Route path="/movies" element={<Movies />}></Route>
                 <Route path="/genre/:id" element={<OneGenre />} />
                 <Route exact path="/genres" element={<Genres />}></Route>
