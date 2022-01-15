@@ -277,6 +277,8 @@ https://www.themoviedb.org/
 
 ### 010 Updating the front end to display the poster image
 
+**Need to save a movie, to update data in db**
+
 <br/>
 
 ![Application](/img/pic-m09-p04.png?raw=true)
@@ -284,6 +286,27 @@ https://www.themoviedb.org/
 <br/>
 
 ### 011 Cleaning things up
+
+<br/>
+
+## 10 Deploying our app to a server
+
+<br/>
+
+### 001 Getting the React application ready for deployment
+
+```
+export REACT_APP_API_URL='http://localhost:4000'
+```
+
+<br/>
+
+### 002 Building the production ready React application
+
+```
+$ export REACT_APP_API_URL='https://api.example.com'
+$ yarn build
+```
 
 <br/>
 

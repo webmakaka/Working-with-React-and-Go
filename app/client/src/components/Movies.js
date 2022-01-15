@@ -5,7 +5,7 @@ export default class Movies extends Component {
   state = { movies: [], isLoaded: false, error: null };
 
   componentDidMount() {
-    fetch('http://localhost:4000/v1/movies')
+    fetch(`${process.env.REACT_APP_API_URL}/v1/movies`)
       .then((response) => {
         if (response.status !== '200') {
           let err = Error;
