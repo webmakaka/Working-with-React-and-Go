@@ -9,7 +9,7 @@ class OneMovie extends Component {
   state = { movie: {}, isLoaded: false, error: null };
 
   componentDidMount() {
-    fetch('http://localhost:4000/v1/movie/' + this.props.params.id)
+    fetch(`${process.env.REACT_APP_API_URL}/v1/movie/` + this.props.params.id)
       .then((response) => {
         if (response.status !== '200') {
           let err = Error;

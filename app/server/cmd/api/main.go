@@ -46,10 +46,10 @@ func main() {
 	flag.IntVar(&cfg.port, "port", 4000, "Server port to listen on")
 	flag.StringVar(&cfg.env, "env", "development", "Application environment (development | production")
 	flag.StringVar(&cfg.db.dsn, "dsn", "postgres://user1:pA55w0rd123@localhost/go_movies?sslmode=disable", "Postgres connection string")
-	flag.StringVar(&cfg.jwt.secret, "jwt-secret", "2dce505d96a53c5768052ee90f3df2055657518dad489160df9913f66042e160", "secret")
+	// flag.StringVar(&cfg.jwt.secret, "jwt-secret", "2dce505d96a53c5768052ee90f3df2055657518dad489160df9913f66042e160", "secret")
 	flag.Parse()
 
-	// cfg.jwt.secret = os.Getenv("GO_MOVIES_JWT")
+	cfg.jwt.secret = os.Getenv("GO_MOVIES_JWT")
 
 	logger := log.New(os.Stdout, "", log.Ldate|log.Ltime)
 

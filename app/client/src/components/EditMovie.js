@@ -71,7 +71,7 @@ class EditMovie extends Component {
 
     const id = this.props.params.id;
     if (id > 0) {
-      fetch('http://localhost:4000/v1/movie/' + id)
+      fetch(`${process.env.REACT_APP_API_URL}/v1/movie/` + id)
         .then((response) => {
           if (response.status !== '200') {
             let err = Error;
@@ -135,7 +135,7 @@ class EditMovie extends Component {
       headers: myHeaders,
     };
 
-    fetch('http://localhost:4000/v1/admin/editmovie', requestOptions)
+    fetch(`${process.env.REACT_APP_API_URL}/v1/admin/editmovie`, requestOptions)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -182,7 +182,7 @@ class EditMovie extends Component {
             myHeaders.append('Authorization', 'Bearer ' + this.props.jwt);
 
             fetch(
-              'http://localhost:4000/v1/admin/deletemovie/' +
+              `${process.env.REACT_APP_API_URL}/v1/admin/deletemovie/` +
                 this.state.movie.id,
               { method: 'GET', headers: myHeaders }
             )
