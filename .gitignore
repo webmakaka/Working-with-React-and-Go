@@ -1,3 +1,6 @@
+PGDATA/
+*.swp
+
 app/server/gomovies
 
 tags

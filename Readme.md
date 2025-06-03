@@ -10,7 +10,7 @@ https://learn-code.ca/
 ## Last Run
 
 ```
-2024.04.07
+2025.06.03
 ```
 
 <br/>
@@ -59,7 +59,7 @@ $ go run cmd/api/*.go
 
 ```
 $ cd app/client
-$ install install
+$ npm install
 $ export REACT_APP_API_URL='http://localhost:4000'
 $ npm run start
 ```

@@ -16,11 +16,10 @@ import (
 
 const version = "1.0.0"
 
-
 type config struct {
 	port int
-	env string
-	db struct {
+	env  string
+	db   struct {
 		dsn string
 	}
 	jwt struct {
@@ -29,9 +28,9 @@ type config struct {
 }
 
 type AppStatus struct {
-	Status string `json:"status"`
+	Status      string `json:"status"`
 	Environment string `json:"environment"`
-	Version string `json:"version"`
+	Version     string `json:"version"`
 }
 
 type application struct {
@@ -66,24 +65,22 @@ func main() {
 		models: models.NewModels(db),
 	}
 
-
-	srv := &http.Server {
-		Addr: fmt.Sprintf(":%d", cfg.port),
-		Handler: app.routes(),
-		IdleTimeout: time.Minute,
-		ReadTimeout: 10 * time.Second,
+	srv := &http.Server{
+		Addr:         fmt.Sprintf(":%d", cfg.port),
+		Handler:      app.routes(),
+		IdleTimeout:  time.Minute,
+		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 30 * time.Second,
 	}
 
 	logger.Println("Starting server on port", cfg.port)
 
 	err = srv.ListenAndServe()
-	
+
 	if err != nil {
 		log.Println(err)
 	}
 }
-
 
 func openDB(cfg config) (*sql.DB, error) {
 	db, err := sql.Open("postgres", cfg.db.dsn)
